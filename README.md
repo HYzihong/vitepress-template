@@ -1,0 +1,2 @@
+# vitepress-template
+blog

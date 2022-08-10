@@ -1,19 +1,10 @@
 /**
- * @Author: hy
- * @Date: 2022-01-26 21:27:28
- * @LastEditors: hy
- * @Description:
- * @LastEditTime: 2022-01-26 21:49:25
- * @FilePath: /vitepress-template/.vitepress/config.js
- * @Copyright 2022 hy, All Rights Reserved.
- * @仅供学习使用~
- **/
-
-/**
  * @type {import('vitepress').UserConfig}
- */
+*/
 
-const pkg = require("../package.json");
+const pkg = require("../../package.json");
+import nav from './view/nav.js'
+import sidebar from './view/sidebar.js'
 
 module.exports = {
   title: "my blog", // 网站标题
@@ -37,11 +28,11 @@ module.exports = {
     repo: pkg.repository,
     // 这里可以集成 algolia 搜索
     //   头部导航
-    nav: [
-      { text: "首页", link: "/" },
-      { text: "关于", link: "/about/" },
-    ],
+    nav,
     //   侧边导航
-    sidebar: [{ text: "我的", link: "/mine/" }],
+    sidebar,
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/HYzihong' }
+    ]
   },
 };

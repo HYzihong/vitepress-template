@@ -1,20 +1,22 @@
 {
   "name": "vitepress-template",
-  "version": "1.0.0",
-  "description": "blog ~",
+  "version": "0.0.1",
+  "description": "vitepress base template",
   "repository": "https://github.com/HYzihong/vitepress-template",
   "license": "MIT",
   "author": "HYzihong",
   "scripts": {
-    "dev": "vitepress dev .",
+    "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
   "keywords": [
     "vite",
-    "vitepress"
+    "vitepress",
+    "vitepress-base"
   ],
-  "devDependencies": {
-    "vitepress": "^0.21.6"
+  "dependencies": {
+    "vitepress": "1.0.0-alpha.4",
+    "vue": "^3.2.37"
   }
 }
